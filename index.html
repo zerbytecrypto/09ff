@@ -92,12 +92,13 @@ async function checkBirthday() {
         if(data.success){
 
             resultDiv.innerHTML = `
-                <p>Age: ${data.age}</p>
-                <p>Days Lived: ${data.daysLived}</p>
-                <p>Hours Lived: ${data.hoursLived}</p>
-                <p>Minutes Lived: ${data.minutesLived}</p>
-                <p>Seconds Lived: ${data.secondsLived}</p>
-            `;
+    <p>Zodiac Sign: ${data.zodiac}</p>
+    <p>Age: ${data.age}</p>
+    <p>Days Lived: ${data.daysLived}</p>
+    <p>Hours Lived: ${data.hoursLived}</p>
+    <p>Minutes Lived: ${data.minutesLived}</p>
+    <p>Seconds Lived: ${data.secondsLived}</p>
+`;
 
         } else {
             resultDiv.innerHTML = data.message;
